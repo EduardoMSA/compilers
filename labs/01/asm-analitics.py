@@ -41,11 +41,17 @@ class asm_analitics:
 if __name__ == "__main__":
     
     try:
+        
         if len(sys.argv)>1:
+            
             asm = asm_analitics(sys.argv[1])
             asm.print_data()
+            
         else:
+            
             asm = asm_analitics()
             asm.print_data()
+            
     except FileNotFoundError as err:
+        
         print("Please, enter a valid file name.")
